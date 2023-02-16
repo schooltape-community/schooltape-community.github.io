@@ -3,12 +3,15 @@ html {
     background-color: #2c2f33;
 }
 
+fluent-dialog {
+    color: black;
+}
 
-h1, h2 {
+fluent-tab-panel > h1, fluent-tab-panel > h2 {
     color: lightskyblue;
 }
 
-fluent-divider {
+fluent-divider, fluent-button {
     margin-bottom: 8px;
 }
 

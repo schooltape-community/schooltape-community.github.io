@@ -16,6 +16,7 @@
         <fluent-tab id="themes">Themes</fluent-tab>
         <fluent-tab id="plugins">Plugins</fluent-tab>
 
+
         <!-- ------------------- HOME ------------------- -->
         <fluent-tab-panel id="homePanel">
             <div class="header">
@@ -29,7 +30,7 @@
                 <p>It is currently in beta, so expect bugs and glitches. If you find any, please report them <a href="https://github.com/schooltape-community/schooltape/issues">here</a>.</p>
             </fluent-card>
         
-            <fluent-divider></fluent-divider>
+            <!-- <fluent-divider></fluent-divider> -->
         
             <fluent-button class="button-install" appearance="accent">Install</fluent-button>
             <fluent-button class="button-source" appearance="lightweight">GitHub Repo</fluent-button>
@@ -88,6 +89,64 @@
             <fluent-card>
                 <p>Plugins are coming soon! This does nothing yet.</p>
             </fluent-card>
+
+            <!-- ------------------- OFFICIAL PLUGINS ------------------- -->
+            <h2>Official Plugins</h2>
+            <p>These plugins are made by the Schooltape team.</p>
+            <fluent-card>
+                <h3>Subheader Revamp</h3>
+                <p>Adds significant functionality and customisability to the subheader.</p>
+                <fluent-button class="install-subheader" appearance="accent">Install</fluent-button>
+                <fluent-button class="dialog-opener info-subheader" appearance="lightweight">Info</fluent-button>
+            </fluent-card>
+            <fluent-card>
+                <h3>Hide PFP</h3>
+                <p>Hide your profile picture accross Schoolbox.</p>
+                <fluent-button class="install-pfp" appearance="accent">Install</fluent-button>
+                <fluent-button class="dialog-opener info-pfp" appearance="lightweight">Info</fluent-button>
+            </fluent-card>
+            <fluent-card>
+                <h3>Legacy Timetable</h3>
+                <p>Revert the new timetable location to the old one.</p>
+                <fluent-button class="install-timetable" appearance="accent">Install</fluent-button>
+                <fluent-button class="dialog-opener info-timetable" appearance="lightweight">Info</fluent-button>
+            </fluent-card>
+            <fluent-card>
+                <h3>Modern Icons</h3>
+                <p>Modernise the icons across Schoolbox.</p>
+                <fluent-button class="install-icons" appearance="accent">Install</fluent-button>
+                <fluent-button class="dialog-opener info-icons" appearance="lightweight">Info</fluent-button>
+            </fluent-card>
+
+            <!-- ------------------- DIALOGS ------------------- -->
+            <fluent-dialog class="info-subheader" hidden trap-focus modal>
+                <div style="margin: 20px;">
+                  <h2>Subheader Plugin Information</h2>
+                  <p>Adds significant functionality and customisability to the subheader.</p>
+                  <fluent-button class="dialog-dismiss" appearance="accent" tabindex="0">Dismiss</fluent-button>
+                </div>
+            </fluent-dialog>
+            <fluent-dialog class="info-pfp" hidden trap-focus modal>
+                <div style="margin: 20px;">
+                  <h2>Hide PFP Plugin Information</h2>
+                  <p>Hide your profile picture accross Schoolbox.</p>
+                  <fluent-button class="dialog-dismiss" appearance="accent" tabindex="0">Dismiss</fluent-button>
+                </div>
+            </fluent-dialog>
+            <fluent-dialog class="info-timetable" hidden trap-focus modal>
+                <div style="margin: 20px;">
+                  <h2>Legacy Timetable Plugin Information</h2>
+                  <p>Revert the new timetable location to the old one.</p>
+                  <fluent-button class="dialog-dismiss" appearance="accent" tabindex="0">Dismiss</fluent-button>
+                </div>
+            </fluent-dialog>
+            <fluent-dialog class="info-icons" hidden trap-focus modal>
+                <div style="margin: 20px;">
+                  <h2>Modern Icons Plugin Information</h2>
+                  <p>Modernise the icons across Schoolbox.</p>
+                  <fluent-button class="dialog-dismiss" appearance="accent" tabindex="0">Dismiss</fluent-button>
+                </div>
+            </fluent-dialog>
         </fluent-tab-panel>
     </fluent-tabs>
 
