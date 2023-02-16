@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Schooltape</title>
+</head>
+<body>
+    <h1>Schooltape</h1>
+    <fluent-badge appearance="accent">Beta</fluent-badge>
+    <fluent-badge appearance="accent">New!</fluent-badge>
+    <p><em>"Every Schoolbox needs Schooltape!"</em></p>
+    <p>Schooltape is a free, open-source, chrome extension that allows you to customise the look and feel and functionality of Schoolbox!</p>
+    <p>It is currently in beta, so expect bugs and glitches. If you find any, please report them <a href="https://github.com/schooltape-community/schooltape/issues">here</a>.</p>
+
+    <fluent-divider></fluent-divider>
+
+    <fluent-button class="button-install" appearance="accent">Install</fluent-button>
+    <fluent-button class="button-source" appearance="outline">GitHub Repo</fluent-button>
+    <script>
+        document.querySelector(".button-install").addEventListener("click", () => {
+            window.open("https://github.com/schooltape-community/schooltape/releases/latest", "_blank");
+        });
+        document.querySelector(".button-source").addEventListener("click", () => {
+            window.open("https://github.com/schooltape-community/schooltape/", "_blank");
+        });
+    </script>
+</body>
+</html>
