@@ -13,6 +13,14 @@ fluent-card {
     margin-top: 8px;
     margin-bottom: 8px;
 }
+
 :root {
     --neutral-foreground-rest: #fff !important;
+}
+label, span {
+    color: #fff !important;
+}
+
+.global-switches > fluent-switch {
+    margin-bottom: 8px;
 }

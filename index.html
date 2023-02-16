@@ -10,11 +10,13 @@
     <title>Schooltape</title>
 </head>
 <body>
-    <fluent-tabs>
+    <fluent-tabs activeid="home">
         <fluent-tab id="home">Home</fluent-tab>
         <fluent-tab id="settings">Settings</fluent-tab>
         <fluent-tab id="themes">Themes</fluent-tab>
         <fluent-tab id="plugins">Plugins</fluent-tab>
+
+        <!-- ------------------- HOME ------------------- -->
         <fluent-tab-panel id="homePanel">
             <div class="header">
                 <h1>Schooltape</h1>
@@ -32,32 +34,63 @@
             <fluent-button class="button-install" appearance="accent">Install</fluent-button>
             <fluent-button class="button-source" appearance="lightweight">GitHub Repo</fluent-button>
         </fluent-tab-panel>
+
+        <!-- ------------------- SETTINGS ------------------- -->
         <fluent-tab-panel id="settingsPanel">
+            <h1>Settings</h1>
             <fluent-card>
-                <p>Settings are coming soon!</p>
+                <p>Settings are coming soon! This does nothing yet.</p>
             </fluent-card>
+
+            <h2>Global Settings</h2>
+            <p>These settings will apply to all of Schooltape.</p>
+            <div class="global-switches">
+                <fluent-switch class="toggle-global">
+                    <span slot="checked-message">On</span>
+                    <span slot="unchecked-message">Off</span>
+                    <label for="cap-switch">Global Toggle:</label>
+                </fluent-switch>
+                <br>
+                <fluent-switch class="toggle-themes">
+                    <span slot="checked-message">On</span>
+                    <span slot="unchecked-message">Off</span>
+                    <label for="cap-switch">Themes Toggle:</label>
+                </fluent-switch>
+                <br>
+                <fluent-switch class="toggle-plugins">
+                    <span slot="checked-message">On</span>
+                    <span slot="unchecked-message">Off</span>
+                    <label for="cap-switch">Plugins Toggle:</label>
+                </fluent-switch>
+                <br>
+            </div>
+
+            <h2>Theme Settings</h2>
+            <p>These settings will apply to the current theme.</p>
+
+            <h2>Plugin Settings</h2>
+            <p>These settings will apply to the current plugin.</p>
+
+            
         </fluent-tab-panel>
+
+        <!-- ------------------- THEMES ------------------- -->
         <fluent-tab-panel id="themesPanel">
+            <h1>Themes</h1>
             <fluent-card>
-                <p>Themes are coming soon!</p>
+                <p>Themes are coming soon! This does nothing yet.</p>
             </fluent-card>
         </fluent-tab-panel>
+
+        <!-- ------------------- PLUGINS ------------------- -->
         <fluent-tab-panel id="pluginsPanel">
+            <h1>Plugins</h1>
             <fluent-card>
-                <p>Plugins are coming soon!</p>
+                <p>Plugins are coming soon! This does nothing yet.</p>
             </fluent-card>
         </fluent-tab-panel>
     </fluent-tabs>
 
-    
-    <script>
-        document.querySelector(".button-install").addEventListener("click", () => {
-            window.open("https://github.com/schooltape-community/schooltape/releases/latest", "_blank");
-        });
-        document.querySelector(".button-source").addEventListener("click", () => {
-            window.open("https://github.com/schooltape-community/schooltape/", "_blank");
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
