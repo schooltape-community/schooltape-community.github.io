@@ -12,3 +12,10 @@ fluent-divider {
 .header>img {
     height: 75px;
 }
+
+fluent-card {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}

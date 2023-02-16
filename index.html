@@ -10,20 +10,46 @@
     <title>Schooltape</title>
 </head>
 <body>
-    <div class="header">
-        <h1>Schooltape</h1>
-        <img src="assets/schooltape.png" alt="Schooltape logo">
-    </div>
-    <fluent-badge appearance="accent">Beta</fluent-badge>
-    <fluent-badge appearance="accent">New!</fluent-badge>
-    <p><em>"Every Schoolbox needs Schooltape!"</em></p>
-    <p>Schooltape is a free, open-source, chrome extension that allows you to customise the look, feel, and functionality of Schoolbox!</p>
-    <p>It is currently in beta, so expect bugs and glitches. If you find any, please report them <a href="https://github.com/schooltape-community/schooltape/issues">here</a>.</p>
+    <fluent-tabs>
+        <fluent-tab id="home">Home</fluent-tab>
+        <fluent-tab id="settings">Settings</fluent-tab>
+        <fluent-tab id="themes">Themes</fluent-tab>
+        <fluent-tab id="plugins">Plugins</fluent-tab>
+        <fluent-tab-panel id="homePanel">
+            <div class="header">
+                <h1>Schooltape</h1>
+            </div>
+            <fluent-badge appearance="accent">Beta</fluent-badge>
+            <fluent-badge appearance="accent">New!</fluent-badge>
+            <fluent-card>
+                <p><em>"Every Schoolbox needs Schooltape!"</em></p>
+                <p>Schooltape is a free, open-source, chrome extension that allows you to customise the look, feel, and functionality of Schoolbox!</p>
+                <p>It is currently in beta, so expect bugs and glitches. If you find any, please report them <a href="https://github.com/schooltape-community/schooltape/issues">here</a>.</p>
+            </fluent-card>
+        
+            <fluent-divider></fluent-divider>
+        
+            <fluent-button class="button-install" appearance="accent">Install</fluent-button>
+            <fluent-button class="button-source" appearance="outline">GitHub Repo</fluent-button>
+        </fluent-tab-panel>
+        <fluent-tab-panel id="settingsPanel">
+            <fluent-card>
+                <p>Settings are coming soon!</p>
+            </fluent-card>
+        </fluent-tab-panel>
+        <fluent-tab-panel id="themesPanel">
+            <fluent-card>
+                <p>Themes are coming soon!</p>
+            </fluent-card>
+        </fluent-tab-panel>
+        <fluent-tab-panel id="pluginsPanel">
+            <fluent-card>
+                <p>Plugins are coming soon!</p>
+            </fluent-card>
+        </fluent-tab-panel>
+    </fluent-tabs>
 
-    <fluent-divider></fluent-divider>
-
-    <fluent-button class="button-install" appearance="accent">Install</fluent-button>
-    <fluent-button class="button-source" appearance="outline">GitHub Repo</fluent-button>
+    
     <script>
         document.querySelector(".button-install").addEventListener("click", () => {
             window.open("https://github.com/schooltape-community/schooltape/releases/latest", "_blank");
