@@ -5,3 +5,10 @@ body {
 fluent-divider {
     margin-bottom: 8px;
 }
+
+.header {
+    display: flex;
+}
+.header>img {
+    height: 75px;
+}
