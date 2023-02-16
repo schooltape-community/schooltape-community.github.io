@@ -6,6 +6,9 @@ document.querySelector(".button-install").addEventListener("click", () => {
 document.querySelector(".button-source").addEventListener("click", () => {
     window.open("https://github.com/schooltape-community/schooltape/", "_blank");
 });
+document.querySelector(".button-createplugin").addEventListener("click", () => {
+    window.open("https://github.com/schooltape-community/schooltape/wiki/Create-a-plugin", "_blank");
+});
 
 // listener for when the page is loaded
 window.addEventListener("load", () => {
