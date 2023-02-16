@@ -9,6 +9,9 @@ document.querySelector(".button-source").addEventListener("click", () => {
 document.querySelector(".button-createplugin").addEventListener("click", () => {
     window.open("https://github.com/schooltape-community/schooltape/wiki/Create-a-plugin", "_blank");
 });
+document.querySelector(".button-createpluginlocal").addEventListener("click", () => {
+    window.open("https://github.com/schooltape-community/schooltape/wiki/Create-a-plugin#local-plugin", "_blank");
+});
 
 // listener for when the page is loaded
 window.addEventListener("load", () => {
