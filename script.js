@@ -1,40 +1,39 @@
 console.log("script.js loaded");
 
-document.querySelector(".button-install").addEventListener("click", () => {
-    window.open("https://github.com/schooltape-community/schooltape/releases/latest", "_blank");
-});
-document.querySelector(".button-source").addEventListener("click", () => {
-    window.open("https://github.com/schooltape-community/schooltape/", "_blank");
-});
-document.querySelector(".button-createplugin").addEventListener("click", () => {
-    window.open("https://github.com/schooltape-community/schooltape/wiki/Create-a-plugin", "_blank");
-});
-document.querySelector(".button-createpluginlocal").addEventListener("click", () => {
-    window.open("https://github.com/schooltape-community/schooltape/wiki/Create-a-plugin#local-plugin", "_blank");
-});
-
 // listener for when the page is loaded
 window.addEventListener("load", () => {
     console.log("page loaded");
     document.body.classList.add("load");
 });
 
-document.querySelectorAll(".dialog-opener").forEach((button) => {
-    button.addEventListener("click", () => {
-        var buttonClass = button.classList[1];
-        var dialogElement = document.getElementsByClassName(buttonClass)[1];
-        dialogElement.hidden = false;
-        console.log(buttonClass + " dialog opened");
-    });
+document.querySelector(".button-install").addEventListener("click", () => {
+    window.open("https://github.com/schooltape-community/schooltape/releases/latest", "_blank");
+});
+document.querySelector(".button-source").addEventListener("click", () => {
+    window.open("https://github.com/schooltape-community/schooltape/", "_blank");
 });
 
-document.querySelectorAll(".dialog-dismiss").forEach((button) => {
-    console.log("button found");
-    button.addEventListener("click", () => {
-        // hides all the fluent dialogs
-        document.querySelectorAll("fluent-dialog").forEach((dialog) => {
-            dialog.hidden = true;
-        });
-        console.log("dialogs closed");
+// for each of the 3 learning buttons, add an event listener to change the image
+for (let i = 0; i < 3; i++) {
+    document.getElementsByClassName("learning-button")[i].addEventListener("click", () => {
+        var image = document.getElementsByClassName("learning-image")[0];
+        // if an animation is already running, stop it
+        if (!image.classList.contains("animation")) {
+            // add the class "animation" to the image
+            image.classList.add("animation");
+            // change the image
+            setTimeout(() => { // delay changing image to make animation look better
+                image.src = "assets/" + document.getElementsByClassName("learning-button")[i].classList[1] + ".jpg";
+            }, 500);
+
+            image.style.animation = "fade-out-in 1s ease-in-out";
+            setTimeout(() => {
+                image.style = "";
+            } , 1000);
+            // remove the class "animation" from the .learning-image
+            setTimeout(() => {
+                image.classList.remove("animation");
+            } , 1000);
+        }
     });
-});
+}
