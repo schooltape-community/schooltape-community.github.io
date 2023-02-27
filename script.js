@@ -17,8 +17,8 @@ document.querySelector(".button-source").addEventListener("click", () => {
 for (let i = 0; i < 3; i++) {
     document.getElementsByClassName("learning-button")[i].addEventListener("click", () => {
         var image = document.getElementsByClassName("learning-image")[0];
-        // if an animation is already running, stop it
-        if (!image.classList.contains("animation")) {
+        // if an animation is already running, don't do anything
+        if (!image.classList.contains("animation") && !image.src.includes(document.getElementsByClassName("learning-button")[i].classList[1])) {
             // add the class "animation" to the image
             image.classList.add("animation");
             // change the image
