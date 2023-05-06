@@ -252,19 +252,3 @@ button:hover {
 .card-hover:hover {
     transform: scale(1.05);
 }
-
-/* ---------------------------------- Transitions ---------------------------------- */
-@keyframes fade-out-in {
-    0% {
-        opacity: 1;
-    }
-    40% {
-        opacity: 0;
-    }
-    60% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
