@@ -24,8 +24,10 @@ for (let i = 0; i < 3; i++) {
             image.style.opacity = 0;
             setTimeout(() => {
                 image.src = "assets/" + document.getElementsByClassName("learning-button")[i].classList[1] + ".jpg";
-                image.style.opacity = 1;
-                currentAnimation = false;
+                setTimeout(() => {
+                    image.style.opacity = 1;
+                    currentAnimation = false;
+                }, 100);
             }, 500);
         }
     });
