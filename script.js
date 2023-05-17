@@ -76,14 +76,16 @@ if (actualWidth < desiredWidth) {
 
 // Cult ad listener
 const copyMarkdown = async () => {
-try {
-    const response = await fetch('https://schooltape-community.github.io/assets/cult-ad.md');
-    const markdown = await response.text();
-    navigator.clipboard.writeText(markdown);
-    console.log('Markdown copied to clipboard!');
-} catch (error) {
-    console.error('Error copying Markdown:', error);
-}
+    try {
+        const response = await fetch('https://schooltape-community.github.io/assets/cult-ad.md');
+        const markdown = await response.text();
+        navigator.clipboard.writeText(markdown);
+        console.log('Markdown copied to clipboard!');
+        window.alert("Copied cult to clipboard!");
+    } catch (error) {
+        console.error('Error copying Markdown:', error);
+        window.alert("Error copying cult to clipboard!");
+    }
 };
 
 const copyButton = document.querySelector(".cult-ad");
