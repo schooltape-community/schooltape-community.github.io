@@ -8,10 +8,10 @@ window.addEventListener("load", () => {
 });
 
 document.querySelector(".button-install").addEventListener("click", () => {
-    window.open("https://github.com/schooltape-community/schooltape/releases/latest", "_blank");
+    window.open("https://github.com/42willow/schooltape/releases/latest", "_blank");
 });
 document.querySelector(".button-source").addEventListener("click", () => {
-    window.open("https://github.com/schooltape-community/schooltape/", "_blank");
+    window.open("https://github.com/42willow/schooltape/", "_blank");
 });
 
 // for each of the 3 learning buttons, add an event listener to change the image
@@ -36,7 +36,7 @@ for (let i = 0; i < 3; i++) {
 
 
 // RELEASE BADGE
-const owner = 'schooltape-community';
+const owner = '42willow';
 const repo = 'schooltape';
 fetch(`https://api.github.com/repos/${owner}/${repo}/releases/latest`)
 .then(response => response.json())
