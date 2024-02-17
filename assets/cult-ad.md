@@ -25,7 +25,7 @@ Installing Schooltape is easy.
 
 ##### Just follow the steps below:
 
-1. Download the latest version of Schooltape from the [releases](https://github.com/schooltape-community/schooltape/releases/latest) page.
+1. Download the latest version of Schooltape from the [releases](https://github.com/42Willow/schooltape/releases/latest) page.
 2. Unzip the file.
 3. Go to chrome://extensions in your browser.
 4. Enable developer mode.
