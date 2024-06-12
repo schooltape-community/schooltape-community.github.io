@@ -1,1 +1,1 @@
-This is the repository for the https://schooltape-community.github.io website
+# This site has migrated to https://schooltape.github.io/
